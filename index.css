@@ -80,8 +80,9 @@ p {
 }
 
 #publish-btn:hover {
-    background-color: #6f00ff;
-    transition-duration: 100ms;
+    color: whitesmoke;
+    background-color: #5c00d4;
+    transition-duration: 300ms;
 }
 
 #endorsement-list {
