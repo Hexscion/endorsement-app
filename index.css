@@ -79,6 +79,10 @@ p {
     padding-top: 8px;
 }
 
+#publish-btn:hover {
+    background-color: #28A9E0;
+}
+
 #endorsement-list {
     box-sizing: border-box;
     margin: 10px auto;
