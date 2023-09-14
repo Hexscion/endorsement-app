@@ -1,0 +1,107 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B1924;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    margin: 17px 0 19px 0;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 19px 0 15px 0;    
+    font-size: 20px;
+}
+
+h3, p {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.input-box {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #444059;
+    color: #8F8F8F;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    resize: none;
+}
+
+.container {
+    width: 390px;
+    margin: 51px auto;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+}
+
+.main-img {
+    width: 90px;
+    margin: 0;
+}
+
+#endorsement-ip {
+    width: 317px;
+    height: 118px;
+}
+
+.fromto-ip {
+    width: 152.85px;
+}
+
+#publish-btn {
+    box-sizing: border-box;
+    width: 317px;
+    height: 61px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #04131C;
+    background-color: #28A9F1;
+    border: none;
+    border-radius: 8px;
+    margin: 9px;
+    padding-top: 8px;
+}
+
+#endorsement-list {
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: 317px;
+}
+
+.endorsement-message-container {
+    box-sizing: border-box;
+    width: 317px;
+    border: none;
+    background-color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    color: #1B1924;
+    padding: 14px;
+    margin: 13px 0;
+}
+
+.endorsement-sub-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.endorsement-sub-container2 {
+    display: flex;
+    gap: 5px;
+}
