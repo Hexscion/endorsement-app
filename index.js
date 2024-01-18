@@ -20,7 +20,8 @@ publishBtnEl.addEventListener("click", function() {
     let fromValue = fromIpEl.value
     let toValue = toIpEl.value
     let likesValue =  0
-    push(endorsementListInDB, {endorsementValue, fromValue, toValue, likesValue})
+    endorsementValue && push(endorsementListInDB, {endorsementValue, fromValue, toValue, likesValue})
+    !endorsementValue && alert("Please enter an endorsement")
     clearInputFieldEl()
 })
 
@@ -51,8 +52,8 @@ function appendItemToEndorsementListEl(item) {
     let itemID = item[0]
     let itemValue = item[1]
     let endorsementItemValue = itemValue.endorsementValue
-    let fromItemValue = 'From ' + itemValue.fromValue
-    let toItemValue = 'To ' + itemValue.toValue
+    let fromItemValue = itemValue.fromValue ? 'From ' + itemValue.fromValue : ''
+    let toItemValue = itemValue.toValue ? 'To ' + itemValue.toValue : ''
     let likesItemValue = itemValue.likesValue
     let newDiv = document.createElement("div")
     newDiv.classList.add("endorsement-message-container")

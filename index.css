@@ -41,13 +41,19 @@ p {
 .container {
     width: 390px;
     margin: 51px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 
 .main-img {
@@ -56,17 +62,17 @@ p {
 }
 
 #endorsement-ip {
-    width: 317px;
-    height: 118px;
+    width: 90%;
+    height: 20dvh;
 }
 
 .fromto-ip {
-    width: 152.85px;
+    width: 90%;
 }
 
 #publish-btn {
     box-sizing: border-box;
-    width: 317px;
+    width: 315px;
     height: 61px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
@@ -75,7 +81,7 @@ p {
     background-color: #28A9F1;
     border: none;
     border-radius: 8px;
-    margin: 9px;
+    margin: 20px 0 10px;
     padding-top: 8px;
 }
 
@@ -87,19 +93,25 @@ p {
 
 #endorsement-list {
     box-sizing: border-box;
-    margin: 10px auto;
-    width: 317px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
 }
 
 .endorsement-message-container {
     box-sizing: border-box;
-    width: 317px;
+    width: 90%;
     border: none;
     background-color: whitesmoke;
     font-family: 'Inter', sans-serif;
     color: #1B1924;
     padding: 14px;
-    margin: 13px 0;
+    margin: 0;
 }
 
 .endorsement-sub-container1 {
@@ -110,4 +122,18 @@ p {
 .endorsement-sub-container2 {
     display: flex;
     gap: 5px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 50dvw;
+    }
+
+    #endorsement-ip {
+        height: 40dvh;
+    }
+
+    #endorsement-list {
+        width: 50dvw;
+    }
 }
